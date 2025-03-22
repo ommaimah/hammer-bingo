@@ -1,4 +1,4 @@
-# hammer-bingo
+# Hammer Guest Bingo
 Language: JavaScript
 
 Bingo game dedicated to one of my fav YouTube series, the Financial Audit. Was hoping someone else would make one, then decided to watch a tutorial on how to create a Bingo game, and tweaked it to what I have now. I hope the Financial Audit team make an official one, but for now, this is for the rest of us.
