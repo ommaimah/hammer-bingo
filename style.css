@@ -1,0 +1,75 @@
+h1 {
+    color: #b8b3b2;
+    text-align: center; /* keep the text centered */
+    font-size: 2rem; /* Maintain the font size */
+    margin-top: 0; /* Remove space above the header */
+    margin-bottom: 20px
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body:focus {
+    outline: none;
+}
+
+.container {
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+#tblBingo {
+    border-collapse: collapse;
+    height: 35rem;
+    width: 35rem;
+    text-align: center;
+    font-size: 12pt;
+    cursor: pointer;
+    table-layout: fixed;
+}
+
+#tblBingo td {
+    width: 3rem;
+    height: 3rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    border: 1px solid #ccc; /* adds a border around each cell */
+}
+
+.cell-format {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cell-format:hover {
+    background-color: #dadcdc;
+    box-sizing: border-box;
+    border-radius: 50%; /* make it a circle */
+}
+
+.circle-overlay {
+    position: relative;
+}
+
+.circle-overlay::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; 
+    height: 80%; 
+    border: 3px solid rgba(255, 0, 0, 0.5); /* red circle border */
+    background-color: rgba(255, 0, 0, 0.5); /* transparent red color */
+    border-radius: 50%; /* make it a circle */
+    pointer-events: none; /* ensures the circle doesn't interfere with clicks */
+}
